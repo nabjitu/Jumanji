@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Jumanji</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- RegisterVoiceActivity -->
+    <string name="title_activity_save_wearer_voice">SaveWearerVoiceActivity</string>
+    <string name="record_voice">Record Voice</string>
+    <string name="record_voice_message">We would like to register your voice</string>
+    <string name="record_voice_instruction_one">1) Please go to a quite area</string>
+    <string name="record_voice_instruction_two">2) Click and hold the record button while reading the text</string>
+    <string name="record_voice_readtext">"Once upon a time there was little pink pig"</string>
+
+    <string name="test_voice_message">We need to test your voice</string>
+    <string name="test_voice_instruction_one">1) Please go to a quite area</string>
+    <string name="test_voice_instruction_two">2) Click and hold the record button while reading the text</string>
+    <string name="test_voice_readtext">"And the little pink pig slept every night in a fuzzy bed of hay"</string>
+
+    <string name="start_sampler">"Start Sampler</string>
+    <string name="stop_sampler">"Stop Sampler</string>
+</resources>

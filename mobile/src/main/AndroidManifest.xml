@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dk.itu.percomp17.jumanji">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".toolbox.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- MAIN ACTIVITY -->
+        <activity
+            android:name=".activities.main.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- OTHER ACTIVITIES -->
+        <activity android:name=".activities.userAccount.UserAccountActivity" />
+        <activity android:name=".activities.userAccount.login.LoginActivity" />
+        <activity android:name=".activities.audioRecorder.AudioRecorderActivity" />
+        <activity android:name=".activities.userAccount.registerUser.RegisterVoiceActivity" />
+        <activity android:name=".activities.userAccount.registerUser.RegisterUserActivity" />
+        <activity android:name=".natalleDB.NewCopyRegisterUserActivity" />
+        <activity android:name=".activities.userAccount.StatisticsActivity" />
+        <activity android:name=".natalleDB.ListDataActivity" />
+
+        <!-- SERVICES -->
+        <service
+            android:name=".services.conversationDetection.ConversationDetectionService" />
+
+        <service
+            android:name=".services.conversationDetection.speakerRecognitionAPI.jobs.IdentificationJob"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
+
+        <service
+            android:name=".services.conversationDetection.speakerRecognitionAPI.jobs.IdentificationStatusJob"
+            android:permission="android.permission.BIND_JOB_SERVICE"
+            android:exported="true"/>
+
+
+        <!-- INTENT RECEiVERS -->
+        <receiver
+            android:name=".services.conversationDetection.ServiceRestarterBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true"
+            android:label="RestartServiceWhenStopped">
+            <intent-filter>
+                <action android:name="dk.itu.percomp17.jumanji.RestartConversationDetectionService"/>
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

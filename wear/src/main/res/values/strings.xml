@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Jumanji</string>
+    <string name="activateDataCollection">Activate</string>
+    <string name="stopDataCollection">Stop</string>
+    <string name="statusText">Status-Text</string>
+    <string name="statusText_DataCollectionActive">ON</string>
+    <string name="statusText_DataCollectionNotActive">OFF</string>
+    <string name="test">test</string>
+    <string name="button_generate_id_text">New Session</string>
+    <string name="button_upload_data_collection">Upload</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="xPlaceholder">x</string>
+    <string name="yPlaceholder">y</string>
+    <string name="zPlaceholder">z</string>
+    <string name="tPlaceholder">t</string>
+    <string name="idPlaceholder">id</string>
+</resources>

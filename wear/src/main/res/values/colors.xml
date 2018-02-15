@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_main_activity">#042126</color>
+    <color name="font_standard_color_blue">#24dfff</color>
+    <color name="background_new_data_collection">#20428a</color>
+
+    <!-- On / OFF -->
+    <color name="on_green">#008971</color>
+    <color name="on_green_text">#7ed6a8</color>
+    <color name="off_red">#963435</color>
+    <color name="off_red_text">#041724</color>
+</resources>

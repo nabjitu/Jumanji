@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.wearable.view.BoxInsetLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_main_activity"
+    tools:context="dk.itu.percomp17.jumanji.dataCollection.DataCollectionActivity"
+    tools:deviceIds="wear">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:id="@+id/activity_new_data_collection"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingBottom="20dp">
+
+                <Button
+                    android:id="@+id/button_new_data_collection"
+                    android:text="@string/button_generate_id_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/activity_data_collection"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/activateButton"
+                    android:layout_gravity="left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/activateDataCollection"/>
+
+                <Button
+                    android:id="@+id/button_test"
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/test"
+                    android:layout_margin="2dp"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/xTextView"
+                    android:textColor="@color/font_standard_color_blue"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/xPlaceholder"
+                    android:layout_margin="2dp"/>
+
+                <TextView
+                    android:id="@+id/yTextView"
+                    android:textColor="@color/font_standard_color_blue"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/yPlaceholder"
+                    android:layout_margin="2dp"/>
+
+                <TextView
+                    android:id="@+id/zTextView"
+                    android:textColor="@color/font_standard_color_blue"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zPlaceholder"
+                    android:layout_margin="2dp"/>
+
+                <TextView
+                    android:id="@+id/idTextView"
+                    android:textColor="@color/font_standard_color_blue"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/idPlaceholder"
+                    android:layout_margin="2dp"/>
+
+                <TextView
+                    android:id="@+id/statusText"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/statusText"
+                    android:textAlignment="center"
+                    android:textColor="@color/off_red_text"
+                    android:background="@color/off_red"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.wearable.view.BoxInsetLayout>

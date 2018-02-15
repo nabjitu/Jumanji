@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="dk.itu.percomp17.jumanji.activities.main.MainActivity"
+    tools:showIn="@layout/activity_main"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="249dp"
+        android:layout_height="56dp"
+        android:background="@color/colorAccent"
+        android:text="Stop PLayback"
+        app:layout_constraintBottom_toTopOf="@+id/Login"
+        app:layout_constraintTop_toBottomOf="@+id/playBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/playBtn"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:background="@color/colorAccent"
+        android:text="Play Recording"
+        app:layout_constraintBottom_toTopOf="@+id/stopBtn"
+        app:layout_constraintTop_toBottomOf="@+id/finishBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/finishBtn"
+        android:layout_width="249dp"
+        android:layout_height="48dp"
+        android:background="@color/colorAccent"
+        android:text="Finish Recording"
+        app:layout_constraintBottom_toTopOf="@+id/playBtn"
+        app:layout_constraintTop_toBottomOf="@+id/startBtn"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="247dp"
+        android:layout_height="48dp"
+        android:background="@color/colorAccent"
+        android:text="Start Recording"
+        app:layout_constraintBottom_toTopOf="@+id/finishBtn"
+        app:layout_constraintTop_toBottomOf="@+id/statusTextView"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="124dp"
+        android:layout_height="28dp"
+        android:text="Status"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/startBtn"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintHorizontal_bias="0.766" />
+
+    <Button
+        android:id="@+id/Login"
+        android:layout_width="108dp"
+        android:layout_height="52dp"
+        android:text="Login"
+        android:textAlignment="center"
+        app:layout_constraintLeft_toRightOf="@+id/tvWelcomeMsg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopBtn"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <Button
+        android:id="@+id/tvWelcomeMsg"
+        android:layout_width="102dp"
+        android:layout_height="51dp"
+        android:text="User account"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stopBtn"
+        app:layout_constraintRight_toLeftOf="@+id/Login"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/bTest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        app:layout_constraintBottom_toTopOf="@+id/startBtn"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/statusTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
